@@ -98,11 +98,13 @@ THE PROJECT DETAILS
 </body>
 
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The front and back views.</p></b></div>
-<img src="/images/The Front.png" width="50%" ><img src="/images/The Back.png" width="49%" >
+![The front](/images/The Front.png) ![The back](/images/The Back.png)
+
+<!-- <img src="/images/The Front.png" width="50%" ><img src="/images/The Back.png" width="49%" > -->
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Actual demonstration</p></b></div>
-<img src="/images/real_front.png" width="49%" ><img src="/images/real_back.png" width="50%" >
+<!-- <img src="/images/real_front.png" width="49%" ><img src="/images/real_back.png" width="50%" > -->
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The schematic.</p></b></div>
-<img src="/images/schematic.png" width="100%" >
+<!-- <img src="/images/schematic.png" width="100%" > -->
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Full Preview.</p></b></div>
-<img src="/images/Show.gif#pic_center" width="100%" >
+<!-- <img src="/images/Show.gif#pic_center" width="100%" > -->
 
