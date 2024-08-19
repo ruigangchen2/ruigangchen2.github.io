@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "EDUCATION"
+title: "Personal Homepage"
 author_profile: true
 redirect_from: 
   - /about/
@@ -11,6 +11,23 @@ redirect_from:
   text-align: justify;  
 }
 </style>
+
+
+<body>
+  <div class="myDiv">
+  <p>Hello and thank you for visiting! My name is Ruigang CHEN, and I’m delighted to have you here. I am currently an MSc in Mechanical Engineering On this site, you'll find the educational background, research experience, intern experience, and projects that I’m excited to share with you.</p>
+
+  <p>Feel free to navigate through my portfolio, read my blog posts, or drop me a message. I’m always open to new opportunities and conversations.</p>
+
+  <p>Thank you for stopping by, and I look forward to connecting with you!</p>
+  </div>
+</body>
+Best regards,<br>
+Ruigang CHEN<br>
+**===========================================================================**
+
+EDUCATION
+======
 
 <div style="font-size:20px"><span style="float:right"><b>Sep.2018-Jun.2022</b></span><b>Guangdong Ocean University (GDOU), P.R.China</b></div>
 
