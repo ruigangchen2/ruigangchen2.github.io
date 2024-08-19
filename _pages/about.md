@@ -65,7 +65,7 @@ RESEARCH EXPERIENCE
 
 **===========================================================================**
 
-INTERN&WORKING EXPERIENCE
+INTERN & WORKING EXPERIENCE
 ======
 <div style="font-size:20"><span style="float:right"><b></b></span>Linux Embedded Development Engineer,</div>
 <div style="font-size:20"><span style="float:right"><b>May.2021-Jun.2021</b></span><b><p>- Guangzhou Yueqian Communication Technology Co., Ltd.</p></b></div>

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Welcome to be here 👏"
 title_separator          : "-"
 name                     : &name "Ruigang CHEN"
-description              : &description "111"
+description              : &description "A graduated student in Mechanical Engineering"
 url                      : https://ruigangchen2.github.io/academicpages.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0003-5228-2492"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
@@ -72,6 +72,7 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # URL
+  
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
