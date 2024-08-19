@@ -12,7 +12,7 @@ redirect_from:
 }
 </style>
 
-<div style="font-size:20"><span style="float:right"><b>Sep.2018-Jun.2022</b></span><b>Guangdong Ocean University (GDOU), P.R.China</b></div>
+<div style="font-size:20px"><span style="float:right"><b>Sep.2018-Jun.2022</b></span><b>Guangdong Ocean University (GDOU), P.R.China</b></div>
 
 - **Major:** Automation, Bachelor of Engineering
 - **Academic Performance:** GPA: 83.5/100; Rank: Top 10%
