@@ -1,49 +1,108 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "EDUCATION"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+<style>
+.myDiv {
+  text-align: justify;  
+}
+</style>
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+<div style="font-size:20"><span style="float:right"><b>Sep.2018-Jun.2022</b></span><b>Guangdong Ocean University (GDOU), P.R.China</b></div>
 
-A data-driven personal website
+- **Major:** Automation, Bachelor of Engineering
+- **Academic Performance:** GPA: 83.5/100; Rank: Top 10%
+- **Graduation Thesis:** Quadcopter Design Based on Real-time Operating System
+
+<div style="font-size:20px"><span style="float:right"><b>Sep.2023-Current</b></span><b>Technion - Israel Institute of Technology, Israel</b></div>
+
+- **Major:** Mechanical Engineering
+- **Academic Performance:** GPA: 91.2/100;
+- **Graduation Thesis:** Improving the Energy Efficiency of Actuator by Energy Recycling and Passive Dynamics
+
+**===========================================================================**
+
+RESEARCH EXPERIENCE
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<div style="font-size:20"><span style="float:right"><b>Dec.2018-Jun.2019</b></span><b>- Design of electromagnetic car based on Cortex-M4 core.</b></div>
+<body>
+  <div class="myDiv"><p>
+  In order to meet the development requirements of modern informatization and intelligence, we propose a motion control of the smart car based on the microcontroller of the Cortex-M4 core. This project uses NXP's K66 chip as the main control chip. We design the PCB of the main control circuit and the PCB of the driver circuit by ourselves, and use the op-amp chip to collect the electromagnetic line data of the track, obtain the track information in real-time through information fusion, and combine the PID algorithm for real-time control and obstacle avoidance to realize the intelligence of the car.
+  </p></div>
+</body>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<div style="font-size:20"><span style="float:right"><b>Jun.2020-Mar.2021</b></span><b>- A portable glasses for obstacle detection based on YOLOV2.</b></div>
+<body>
+  <div class="myDiv"><p>
+  This project is an innovation and entrepreneurship project for college students. The purpose is to design portable smart glasses to assist people in their daily activities. We use the K210 chip as the main control chip. The K210 chip combined with the YOLOV2 detection algorithm is used for real-time detection of the vehicle, and the information is sent to the LabVIEW host computer through the Wi-Fi module so that the user can know the specific situation of the vehicles on both sides in real-time.
+  </p></div>
+</body>
 
-Getting started
+<div style="font-size:20"><span style="float:right"><b>Mar.2021-Jun.2021</b></span><b>- A smart home system based on UCOSIII.</b></div>
+<body>
+  <div class="myDiv"><p>
+  The whole project is built by STM32CubeMX, using STM32F103C8T6 as the main control chip, using UCOSIII for thread control, judging the current environment by getting each sensor measurement value, and using the pre-set algorithm for the next action. The system can be set in automatic mode and manual mode, and the manual mode is operated by the user's cell phone APP with a Wi-Fi control system. Provides some convenience for home life.
+  </p></div>
+</body>
+
+<div style="font-size:20"><span style="float:right"><b>Nov.2021-Jun.2022</b></span><b>- Quadcopter Design Based on Real-time Operating System.</b></div>
+<body>
+  <div class="myDiv"><p>
+  "Quadcopter Design Based on Real-time Operating System" belongs to software and hardware design and is also my graduation design paper. I designed a quadcopter which is based on UCOSIII that can be controlled by a wireless remote. I designed the main control PCB by Altium Designer and validated the feasibility of the hardware. By acquiring the acceleration data and angular velocity data from the MPU6050, the real-time angle is obtained by using the quaternion method, combined with the cascade PID algorithm to control the stable flight of the aircraft.
+  </p></div>
+</body>
+
+<div style="font-size:20"><span style="float:right"><b>Sep.2022-Jan.2023</b></span><b>- Design of a passive ankle-thigh exoskeleton.</b></div>
+<body>
+  <div class="myDiv"><p>
+  In this research, we proposed shifting the leg swing force to the ankle toe-off phase by an exoskeleton and hence decreases the metabolic cost of human walking by 6.7%. The exoskeleton is mounted on the thigh and extends beyond the low leg. A rubber band connects the extended bar and the back of the shoe, passing the torque from the thigh to the ankle. This reduces the ankle torque during the toe-off phase, in which most of the positive energy input from the muscle to the skeleton happens. We have finished the concept, design, and prototype of the exoskeleton and carried out the initial test. Test results show that the metabolic cost of walking with the exoskeleton is 351.1W, about 6.7% decrease compared with that of normal human walking (376.6 W).
+  </p></div>
+</body>
+
+**===========================================================================**
+
+INTERN&WORKING EXPERIENCE
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<div style="font-size:20"><span style="float:right"><b></b></span>Linux Embedded Development Engineer,</div>
+<div style="font-size:20"><span style="float:right"><b>May.2021-Jun.2021</b></span><b><p>- Guangzhou Yueqian Communication Technology Co., Ltd.</p></b></div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div style="font-size:20"><span style="float:right"><b></b></span>Hardware and Software Test Engineer,</div>
+<div style="font-size:20"><span style="float:right"><b>Apr.2022-Jun.2022</b></span><b><p>- Shenzhen Silicon Speed Technology Co., Ltd.</p></b></div>
 
-**Markdown generator**
+<div style="font-size:20"><span style="float:right"><b></b></span>Research Assistant, Mechanical Engineering (Robotics) Program,</div>
+<div style="font-size:20"><span style="float:right"><b>Jul.2022- Sep.2023</b></span><b><p>- Guangdong Technion-Israel Institute of Technology.</p></b></div>
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**===========================================================================**
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+THE PROJECT DETAILS
+======
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div style="font-size:25"><span style="float:right"><b></b></span><b>- Quadcopter Design Based on Real-time Operating System.</b></div>
+- [Link](https://gitee.com/ruigang_chen/tiny-quadcopter) to the hardware repository.
+- [Link](https://gitee.com/ruigang_chen/quadcopter-ucosiii) to the software repository.
+
+<body>
+  <div class="myDiv"><p>
+  This project is a mini small flight controller designed which is integrated with a 2.4GHz wireless transmitter module, accelerometer gyroscope, barometer, and magnetometer. For a better experience, the USART expansion interface, SPI expansion interface and IIC expansion interface are added.</p>
+  <p>
+  The hardware control circuit of the flight control system is mainly composed of the following five parts: STM32F103C8T6 main control chip and peripheral circuits, power supply step-up and step-down circuit, sensor module, motor drive circuit, and NRF signal transmission module. Since it is a small quadcopter, for the barometer, the strong cyclone of the propeller will affect the reading of the barometer value, so only the hardware interface is reserved for the barometer, and the software does not write the relevant code. As for the magnetometer, since the small quadcopter will not stay in the air for too long, its YAW angle will not fluctuate very much, so only the interface is reserved for the hardware, and no relevant codes have been written for the software.</p>
+  <p>
+  For the software part, the system mainly includes three parts: reading and filtering MPU6050 sensor data, attitude calculation through quaternion, and attitude control through cascade PID. It can be said that each part is very important for the stable operation of the flight control system. The filtering algorithm uses the first-order Kalman filtering algorithm, and the attitude calculation uses the complementary filtering algorithm plus the quaternion to inverse solve the angle got from IMU to obtain the current attitude angle of the flight control, and the attitude control uses cascaded PID control.</p>
+  </div>
+</body>
+
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The front and back views.</p></b></div>
+<img src="/images/The Front.png" width="50%" ><img src="/images/The Back.png" width="49%" >
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Actual demonstration</p></b></div>
+<img src="/images/real_front.png" width="49%" ><img src="/images/real_back.png" width="50%" >
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The schematic.</p></b></div>
+<img src="/images/schematic.png" width="100%" >
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Full Preview.</p></b></div>
+<img src="/images/Show.gif#pic_center" width="100%" >
+
