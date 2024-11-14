@@ -15,33 +15,38 @@ redirect_from:
 
 <body>
   <div class="myDiv">
-  <p>Hello and thank you for visiting! My name is Ruigang CHEN, and I’m delighted to have you here. I am currently an MSc in Mechanical Engineering On this site, you'll find the educational background, research experience, intern experience, and projects that I’m excited to share with you.</p>
+  <p> </p>
+  <p>To friends who come here,</p>
 
-  <p>Feel free to navigate through my portfolio, read my blog posts, or drop me a message. I’m always open to new opportunities and conversations.</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Hello and thank you for visiting! My name is Ruigang CHEN, and I’m delighted to have you here. I'm currently pursuing the Ph.D. degree in Mechanical Engineering at Technion–Israel Institute of Technology. My research interests include applying passive dynamics and enhancing efficiency to improve the performance of robots. On this site, you'll find the educational background, research experience, intern experience, and projects that I’m excited to share with you.</p>
 
-  <p>Thank you for stopping by, and I look forward to connecting with you!</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Feel free to navigate through my portfolio, read my blog posts, or drop me a message through email. I’m always open to new opportunities and conversations.</p>
+
   </div>
 </body>
 Best regards,<br>
 Ruigang CHEN<br>
-**===========================================================================**
+
+***
+
 
 EDUCATION
 ======
 
 <div style="font-size:20px"><span style="float:right"><b>Sep.2018-Jun.2022</b></span><b>Guangdong Ocean University (GDOU), P.R.China</b></div>
 
-- **Major:** Automation, Bachelor of Engineering
+- **Major:** Automation, B.E.
 - **Academic Performance:** GPA: 83.5/100; Rank: Top 10%
 - **Graduation Thesis:** Quadcopter Design Based on Real-time Operating System
 
 <div style="font-size:20px"><span style="float:right"><b>Sep.2023-Current</b></span><b>Technion - Israel Institute of Technology, Israel</b></div>
 
-- **Major:** Mechanical Engineering
+- **Major:** Mechanical Engineering, Ph.D.
 - **Academic Performance:** GPA: 91.2/100;
-- **Graduation Thesis:** Improving the Energy Efficiency of Actuator by Energy Recycling and Passive Dynamics
+- **Research Interests:** Combining passive dynamics with reinforcement learning to improve the performance of robots
 
-**===========================================================================**
+***
+
 
 RESEARCH EXPERIENCE
 ======
@@ -80,7 +85,7 @@ RESEARCH EXPERIENCE
   </p></div>
 </body>
 
-**===========================================================================**
+***
 
 INTERN & WORKING EXPERIENCE
 ======
@@ -95,7 +100,7 @@ INTERN & WORKING EXPERIENCE
 <div style="font-size:20"><span style="float:right"><b>Jul.2022- Sep.2023</b></span><b><p>- Guangdong Technion-Israel Institute of Technology.</p></b></div>
 
 
-**===========================================================================**
+***
 
 THE PROJECT DETAILS
 ======
@@ -114,12 +119,37 @@ THE PROJECT DETAILS
   </div>
 </body>
 
+
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The front and back views.</p></b></div>
 <img src="../images/The Front.png" width="50%" ><img src="../images/The Back.png" width="49%" >
+
+
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Actual demonstration</p></b></div>
 <img src="../images/real_front.png" width="49%" ><img src="../images/real_back.png" width="50%" >
+
+
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The schematic.</p></b></div>
 <img src="../images/schematic.png" width="100%" >
+
+
 <div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Full Preview.</p></b></div>
 <img src="../images/Show.gif#pic_center" width="100%" >
 
+<style>
+hr {
+ border-style: none !important;
+ border-top-width: 10px !important;
+}
+hr:nth-of-type(1) {
+ border-top-style: ridge !important;
+}
+hr:nth-of-type(2) {
+ border-top-style: ridge !important;
+}
+hr:nth-of-type(3) {
+ border-top-style: ridge !important;
+}
+hr:nth-of-type(4) {
+ border-top-style: ridge !important;
+}
+</style>

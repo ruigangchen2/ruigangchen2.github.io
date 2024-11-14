@@ -11,10 +11,10 @@ locale                   : "en-US"
 title                    : "Welcome to be here 👏"
 title_separator          : "-"
 name                     : &name "Ruigang CHEN"
-description              : &description "A graduated student in Mechanical Engineering"
-url                      : https://ruigangchen2.github.io/academicpages.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Ph.D. in Mechanical Engineering"
+url                      : https://ruigangchen2.github.io/ #https://ruigangchen2.github.io/academicpages.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "ruigangchen2/ruigangchen2.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Ruigang CHEN"
   pronouns         : # example: "she/her"  
-  bio              : "A graduated student in Mechanical Engineering"
+  bio              : "Ph.D. in Mechanical Engineering"
   location         : "P.R.C"
   employer         : "Technion"
   uri              : # URL
