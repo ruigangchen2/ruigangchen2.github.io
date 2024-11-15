@@ -1,8 +1,8 @@
 ---
 title: "ELECTRIC ACTUATORS"
 collection: teaching
-type: "Undergraduate course (Teaching Evaluation: 4.81/5.0)"
-permalink: /teaching/2024-spring-teaching-1
+type: "Undergraduate Course (Teaching Evaluation: 4.81/5.0)"
+permalink: /teaching/2024-spring-teaching
 venue: "GTIIT, Mechanical Engineering & Robotics"
 date: 2024-03-01
 location: "Shantou, China"
