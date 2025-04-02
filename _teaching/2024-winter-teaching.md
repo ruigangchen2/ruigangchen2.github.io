@@ -1,7 +1,7 @@
 ---
 title: "INTRODUCTION TO ROBOTICS"
 collection: teaching
-type: "Undergraduate Course (In Process)"
+type: "Undergraduate Course (Teaching Evaluation: 5.0/5.0)"
 permalink: /teaching/2024-winter-teaching
 venue: "GTIIT, Mechanical Engineering & Robotics"
 date: 2024-10-01
