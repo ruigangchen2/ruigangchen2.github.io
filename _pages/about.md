@@ -124,7 +124,7 @@ THE PROJECT DETAILS
 <img src="../images/The Front.png" width="50%" ><img src="../images/The Back.png" width="49%" >
 
 
-<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Actual demonstration</p></b></div>
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- Actual demonstration.</p></b></div>
 <img src="../images/real_front.png" width="49%" ><img src="../images/real_back.png" width="50%" >
 
 
@@ -153,3 +153,21 @@ hr:nth-of-type(4) {
  border-top-style: ridge !important;
 }
 </style>
+
+***
+
+<div style="font-size:25"><span style="float:right"><b></b></span><b>- Inductance-Detection-Module.</b></div>
+- [Link](https://github.com/ruigangchen2/Inductance-Detection-Module) to the hardware repository.
+
+
+<body>
+  <div class="myDiv"><p>
+  ​This is a circuit diagram for an LMV358 four-channel operational amplifier electromagnetic module. The circuit consists of four 10mH inductors and 6.8nF capacitors to form a resonant circuit. The AC electromagnetic signal with a frequency of 20kHz is collected and transmitted to the LMV358 for two-stage amplification and rectification, then output to the microcontroller interface. A potentiometer can be used to adjust the received signal strength.</p>
+  </div>
+</body>
+
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The schematic.</p></b></div>
+<img src="../images/Inductance-Detection-Module-Sch.png" width="100%" >
+
+<div style="font-size:30"><span style="float:right"><b></b></span><b><p>- The PCB.</p></b></div>
+<img src="../images/Inductance-Detection-Module-PCB.png" width="100%" >
