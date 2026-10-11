@@ -3,14 +3,22 @@
   'use strict';
   var gravity = 100;
 
-  function findNearest(particles, pointer) {
-    var nearest = -1;
-    var distance = Infinity;
-    particles.forEach(function (p, index) {
-      var gap = Math.max(0, Math.hypot(p.x - pointer.x, p.y - pointer.y) - p.radius);
-      if (gap < distance) { distance = gap; nearest = index; }
+  function findNearest(particles, pointer, limit, previous) {
+    var nearest = particles.map(function (p, index) {
+      return { index: index, distance: Math.max(0, Math.hypot(p.x - pointer.x, p.y - pointer.y) - p.radius) };
+    }).sort(function (a, b) {
+      return a.distance - b.distance || a.index - b.index;
+    }).slice(0, limit).map(function (item) { return item.index; });
+    if (!previous || !previous.length) return nearest;
+    // Distance chooses membership; retained balls keep their angular slots.
+    var slots = previous.slice(0, limit).map(function (index) { return nearest.indexOf(index) === -1 ? -1 : index; });
+    nearest.forEach(function (index) {
+      if (slots.indexOf(index) !== -1) return;
+      var vacant = slots.indexOf(-1);
+      if (vacant === -1) slots.push(index);
+      else slots[vacant] = index;
     });
-    return nearest;
+    return slots;
   }
 
   function contain(p, width, height) {
@@ -51,14 +59,18 @@
   }
 
   function stepWorld(particles, pointer, selected, width, height, elapsed) {
+    var orbit = selected.reduce(function (largest, index) { return Math.max(largest, particles[index].radius); }, 0) * 1.3 + 22;
     elapsed = Math.min(Math.max(elapsed, 0), 1 / 30);
     var steps = Math.max(1, Math.ceil(elapsed / (1 / 120)));
     var dt = elapsed / steps;
     for (var step = 0; step < steps; step++) {
       particles.forEach(function (p, index) {
-        if (pointer && index === selected) {
-          var targetX = Math.max(p.radius, Math.min(width - p.radius, pointer.x));
-          var targetY = Math.max(p.radius, Math.min(height - p.radius, pointer.y));
+        var rank = selected.indexOf(index);
+        if (pointer && rank !== -1) {
+          // Separate targets let the selected balls gather without fighting for one point.
+          var angle = rank * Math.PI * 2 / selected.length - Math.PI / 2;
+          var targetX = Math.max(p.radius, Math.min(width - p.radius, pointer.x + Math.cos(angle) * orbit));
+          var targetY = Math.max(p.radius, Math.min(height - p.radius, pointer.y + Math.sin(angle) * orbit));
           p.vx += ((targetX - p.x) * 16 - p.vx * 6) * dt;
           p.vy += ((targetY - p.y) * 16 - p.vy * 6) * dt;
         } else { p.vy += gravity * dt; }
@@ -85,7 +97,7 @@
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var particles = [];
   var pointer = null;
-  var selected = -1;
+  var selected = [];
   var lastInput = -Infinity;
   var lastFrame = 0;
   var frame = null;
@@ -122,7 +134,7 @@
     var dt = lastFrame ? (now - lastFrame) / 1000 : 0;
     lastFrame = now;
     var activePointer = pointer && now - lastInput < 900 ? pointer : null;
-    stepWorld(particles, activePointer, activePointer ? selected : -1, width, height, dt);
+    stepWorld(particles, activePointer, activePointer ? selected : [], width, height, dt);
     draw();
     frame = window.requestAnimationFrame(tick);
   }
@@ -131,14 +143,14 @@
     frame = null;
     lastFrame = 0;
     pointer = null;
-    selected = -1;
+    selected = [];
     if (!reducedMotion.matches && !document.hidden) frame = window.requestAnimationFrame(tick);
   }
-  function releasePointer() { pointer = null; selected = -1; }
+  function releasePointer() { pointer = null; selected = []; }
   window.addEventListener('pointermove', function (event) {
     if (reducedMotion.matches || (event.pointerType === 'touch' && event.buttons === 0)) return;
     pointer = { x: event.clientX, y: event.clientY };
-    selected = findNearest(particles, pointer);
+    selected = findNearest(particles, pointer, width < 760 ? 3 : 4, selected);
     lastInput = performance.now();
   }, { passive: true });
   window.addEventListener('pointerup', function (event) { if (event.pointerType === 'touch') releasePointer(); }, { passive: true });
@@ -156,7 +168,7 @@
       p.radius = radiusFor(p.baseRadius);
       p.element.style.width = p.element.style.height = p.radius * 2 + 'px';
     });
-    stepWorld(particles, null, -1, width, height, 0);
+    stepWorld(particles, null, [], width, height, 0);
     draw();
   }, { passive: true });
   reducedMotion.addEventListener('change', updatePlayback);
