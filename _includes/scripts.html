@@ -1,4 +1,6 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% unless page.layout == 'portfolio' %}
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% endunless %}
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

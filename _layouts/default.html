@@ -11,19 +11,25 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{{ page.body_class }}">
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% if page.layout == 'portfolio' %}
+      {% include portfolio-header.html %}
+    {% else %}
+      {% include masthead.html %}
+    {% endif %}
 
     {{ content }}
 
+    {% unless page.layout == 'portfolio' %}
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
         {% include footer.html %}
       </footer>
     </div>
+    {% endunless %}
 
     {% include scripts.html %}
 
