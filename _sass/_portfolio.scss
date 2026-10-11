@@ -42,15 +42,6 @@
   .portfolio-header nav a { padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; transition: background-color .25s, box-shadow .25s; }
   .portfolio-header nav a:hover, .portfolio-header nav a:focus-visible { background: rgba(255,255,255,.8); box-shadow: 0 3px 12px rgba(64,91,140,.07); }
   .portfolio-home:has(#about:target) nav a[href="#about"], .portfolio-home:has(#work:target) nav a[href="#work"], .portfolio-home:has(#research:target) nav a[href="#research"], .portfolio-home:has(#contact:target) nav a[href="#contact"] { color: #3159af; background: #e2eaff; box-shadow: inset 0 1px 1px #fff; }
-  .motion-toggle { position: relative; display: flex; align-items: center; gap: 8px; margin: 0; font-size: 11px; font-weight: 500; color: #566681; cursor: pointer; }
-  .motion-toggle input { position: absolute; width: 1px; height: 1px; opacity: 0; }
-  .motion-switch { width: 30px; height: 18px; border-radius: 12px; background: #a2adc1; padding: 3px; box-shadow: inset 0 1px 3px rgba(32,53,89,.15); transition: background-color .2s; }
-  .motion-switch::after { content: ""; display: block; width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(32,53,89,.2); transition: transform .2s; }
-  .motion-toggle input:checked + .motion-switch { background: #597cd0; }
-  .motion-toggle input:checked + .motion-switch::after { transform: translateX(12px); }
-  .motion-toggle input:focus-visible + .motion-switch { outline: 3px solid #416ad3; outline-offset: 4px; }
-  .portfolio-home:has(#glass-motion:not(:checked)) .glass-orb,
-  .portfolio-home:has(#glass-motion:not(:checked)) .glass-surface::after { animation-play-state: paused; }
 
   .portfolio-hero { display: grid; grid-template-columns: minmax(0,1.65fr) minmax(0,1fr); gap: 24px; }
   .welcome-card { padding: 46px 46px 34px; }
@@ -254,7 +245,6 @@
     .glass-orb, .glass-surface::after { animation: none !important; }
     .glass-particle { display: none; }
     .portfolio-home *, .portfolio-home *::before, .portfolio-home *::after { transition: none !important; scroll-behavior: auto !important; }
-    .motion-toggle { display: none; }
   }
   @media (prefers-reduced-transparency:reduce) {
     .glass-surface, .portfolio-header, .portfolio-header::before, .portfolio-section, .quick-links > a, .portfolio-header nav { background: #f9fbff; -webkit-backdrop-filter: none; backdrop-filter: none; }
