@@ -1,6 +1,36 @@
 # Academic Pages
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+![pages-build-deployment](https://github.com/ruigangchen2/ruigangchen2.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+
+## 本网站的预览与发布
+
+- 公开网站：<https://ruigangchen2.github.io/>，可在其他设备上访问。
+- GitHub Pages 发布设置：`Settings → Pages → Deploy from a branch → master → / (root)`。
+- 推送到 `master` 后，GitHub 会自动构建并发布网站。部署进度可在仓库的 `Actions` 中查看。
+
+### 在这台 Mac 上预览
+
+本网站使用 Jekyll。先在网站文件夹内运行以下命令，使用 Homebrew 的 Ruby 3.3：
+
+```bash
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+bundle exec jekyll serve -l --host 127.0.0.1 --port 4000
+```
+
+然后打开 <http://127.0.0.1:4000/>。修改页面内容后会自动重建、刷新；修改 `_config.yml` 后需要重新启动预览。按 `Ctrl+C` 可停止服务。本地预览依赖这台 Mac 上运行的服务；其他设备应使用上面的公开网站地址。
+
+如果换了一台 Mac，需要先安装依赖：
+
+```bash
+brew install ruby@3.3
+export PATH="$(brew --prefix ruby@3.3)/bin:$PATH"
+bundle config set --local path vendor/bundle
+bundle install
+```
+
+本地依赖放在 `vendor/bundle`，不会提交到 GitHub，也不会被 Jekyll 当成网站内容。
+
+---
 
 Academic Pages is a Github Pages template for academic websites.
 
